@@ -1,0 +1,1 @@
+C:\Users\aassa\anaconda3\python.exe C:/Users/aassa/PycharmProjects/Stocks/main.py
