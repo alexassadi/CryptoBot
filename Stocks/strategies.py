@@ -259,9 +259,9 @@ class TechnicalStrategy(Strategy):
         macd_line, macd_signal, line_prev, signal_prev = self._macd()
         rsi, rsi_prev = self._rsi()
 
-        if rsi < 30:
+        if rsi < 25:
             return 1
-        elif rsi > 70 and (((line_prev - signal_prev) - (macd_line - macd_signal)) / (line_prev - signal_prev) > 0.1):
+        elif rsi > 75 and (((line_prev - signal_prev) - (macd_line - macd_signal)) / (line_prev - signal_prev) > 0.1):
             return -1
         else:
             return 0
